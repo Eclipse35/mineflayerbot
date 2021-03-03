@@ -33,8 +33,8 @@ bot.once('spawn', () => {
     (bot.version)
     const movements = new Movements(bot, mcData)
     const blockPos = bot.entity.position.offset(0, -1, 0)
+    
   const block = bot.blockAt(blockPos)
-
   bot.tool.equipForBlock(block, {}, () => {
     bot.dig(block)
   })
