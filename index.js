@@ -32,6 +32,12 @@ bot.once('spawn', () => {
     const mcData = require('minecraft-data')
     (bot.version)
     const movements = new Movements(bot, mcData)
+    const blockPos = bot.entity.position.offset(0, -1, 0)
+  const block = bot.blockAt(blockPos)
+
+  bot.tool.equipForBlock(block, {}, () => {
+    bot.dig(block)
+  })
     bot.pathfinder.setMovements(movements)
         bot.autoEat.options = {
           priority: "saturation",
@@ -117,13 +123,7 @@ function getNearestTarget (players) {
 
 bot.on('chat', (username, message) => {
     if (username === bot.username) return
-if (message === 'mine down') {
-  const blockPos = bot.entity.position.offset(0, -1, 0)
-  const block = bot.blockAt(blockPos)
-
-  bot.tool.equipForBlock(block, {}, () => {
-    bot.dig(block)
-  }
+    
     if (message === 'go') {
         const entity = getNearestTarget(true)
 
