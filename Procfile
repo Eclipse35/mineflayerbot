@@ -1,0 +1,1 @@
+Worker: node index.js ApocalypticFactions.aternos.me 25565 Bot
