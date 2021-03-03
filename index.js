@@ -3,7 +3,7 @@ const { pathfinder, goals, Movements } = require('mineflayer-pathfinder')
 const { TaskQueue } = require('mineflayer-utils')
 const armorManager = require('mineflayer-armor-manager')
 const autoeat = require("mineflayer-auto-eat")
-const gbot = require("gbotjs");
+const toolPlugin = require('mineflayer-tool').plugin
 
 
 const bot = mineflayer.createBot({
@@ -17,7 +17,7 @@ const bot = mineflayer.createBot({
 bot.loadPlugin(pathfinder)
 bot.loadPlugin(autoeat)
 bot.loadPlugin(armorManager)
-
+bot.loadPlugin(toolPlugin)
 
 const VIEW_RANGE = 16
 const FOLLOW_RANGE = 2
@@ -117,7 +117,13 @@ function getNearestTarget (players) {
 
 bot.on('chat', (username, message) => {
     if (username === bot.username) return
+if (message === 'mine down') {
+  const blockPos = bot.entity.position.offset(0, -1, 0)
+  const block = bot.blockAt(blockPos)
 
+  bot.tool.equipForBlock(block, {}, () => {
+    bot.dig(block)
+  }
     if (message === 'go') {
         const entity = getNearestTarget(true)
 
