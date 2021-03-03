@@ -7,9 +7,9 @@ const gbot = require("gbotjs");
 
 
 const bot = mineflayer.createBot({
-    host: process.argv[2],
-    port:  process.argv[3],
-    username: process.argv[4] || 'Bot',
+    host: 'ApocalypticFactions.aternos.me',
+    port:  25565,
+    username: 'Bot',
     version: false,
 //    password: process.argv[5],
 })
