@@ -26,11 +26,10 @@ let target = null
 let guardMode = false
 let gaurdPos = null
 
-const auth = () => {
-  bot.chat('/register Bot35')
-}
-
-bot.once('spawn', auth, () => {
+bot.once('spawn', () => {
+  bot.chat('hi!')
+})
+{
     const mcData = require('minecraft-data')
     (bot.version)
     const movements = new Movements(bot, mcData)
