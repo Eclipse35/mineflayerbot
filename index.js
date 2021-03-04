@@ -26,7 +26,7 @@ let target = null
 let guardMode = false
 let gaurdPos = null
 
-bot.once('spawn', () => {
+bot.once('spawn', ( => {
     const mcData = require('minecraft-data')
     (bot.version)
     const movements = new Movements(bot, mcData)
