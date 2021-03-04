@@ -6,7 +6,7 @@ const autoeat = require("mineflayer-auto-eat")
 
 
 const bot = mineflayer.createBot({
-    host: 'ApocalypticFactions.aternos.me',
+    host: 'inmc.tk',
     port:  25565,
     username: 'Bot35',
     version: false,
@@ -26,7 +26,11 @@ let target = null
 let guardMode = false
 let gaurdPos = null
 
-bot.once('spawn', () => {
+const auth = () => {
+  bot.chat('/register Bot35')
+}
+
+bot.once('spawn', auth, () => {
     const mcData = require('minecraft-data')
     (bot.version)
     const movements = new Movements(bot, mcData)
