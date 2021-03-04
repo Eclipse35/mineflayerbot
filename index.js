@@ -27,9 +27,6 @@ let guardMode = false
 let gaurdPos = null
 
 bot.once('spawn', () => {
-  bot.chat('hi!')
-})
-{
     const mcData = require('minecraft-data')
     (bot.version)
     const movements = new Movements(bot, mcData)
