@@ -28,6 +28,8 @@ let gaurdPos = null
 
 bot.once('spawn', () => {
     bot.chat('/register Bot35')
+    bot.chat('Hello, I am a AI')
+    bot.chat('By Eclipse35')
 })
          {
     const mcData = require('minecraft-data')
