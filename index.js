@@ -5,7 +5,7 @@ const armorManager = require('mineflayer-armor-manager')
 
 
 const bot = mineflayer.createBot({
-    host: 'moonhandW1yL.aternos.me',
+    host: 'baconsareok.aternos.me',
     port:  25565,
     username: 'Bot35',
     version: false,
