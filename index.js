@@ -6,7 +6,7 @@ const autoeat = require("mineflayer-auto-eat")
 
 
 const bot = mineflayer.createBot({
-    host: 'RainSMPbycrist.aternos.me',
+    host: 'moonhandW1yL.aternos.me',
     port:  25565,
     username: 'Bot35',
     version: false,
