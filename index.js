@@ -4,9 +4,9 @@ const { pathfinder, Movements, goals} = require('mineflayer-pathfinder')
 const armorManager = require('mineflayer-armor-manager')
 
 const bot = mineflayer.createBot({
-    host: 'watermelonsmpisop.aternos.me',
+    host: 'frosalukart.aternos.me',
     port:  25565,
-    username: 'WaterMelon',
+    username: 'Bot35',
     version: false,
 //    password: process.argv[5],
 })
