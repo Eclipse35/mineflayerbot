@@ -7,7 +7,7 @@ const bot = mineflayer.createBot({
     host: 'watermelonsmpisop.aternos.me',
     port:  25565,
     username: 'WaterMelon',
-    version: false,
+    version: 1.16.5,
 //    password: process.argv[5],
 })
 
