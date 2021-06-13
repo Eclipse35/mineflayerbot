@@ -1,5 +1,5 @@
 const mineflayer = require('mineflayer')
-const pvp = require('mineflayer-pvp').plugin
+const pvp = require('mineflayer-pvp')
 const { pathfinder, Movements, goals} = require('mineflayer-pathfinder')
 const armorManager = require('mineflayer-armor-manager')
 
