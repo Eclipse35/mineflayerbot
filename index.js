@@ -1,12 +1,12 @@
 const mineflayer = require('mineflayer')
-const pvp = require('mineflayer-pvp').plugin
+const pvp = require('mineflayer-pvp')
 const { pathfinder, Movements, goals} = require('mineflayer-pathfinder')
 const armorManager = require('mineflayer-armor-manager')
 
 const bot = mineflayer.createBot({
-    host: 'frosalukart.aternos.me',
-    port:  25565,
-    username: 'Bot35',
+    host: '109.236.91.2',
+    port:  43001,
+    username: 'TechnoBot',
     version: false,
 //    password: process.argv[5],
 })
