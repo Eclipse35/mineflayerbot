@@ -2,7 +2,6 @@ const mineflayer = require('mineflayer')
 const pvp = require('mineflayer-pvp').plugin
 const { pathfinder, Movements, goals} = require('mineflayer-pathfinder')
 const armorManager = require('mineflayer-armor-manager')
-const mcData= require('minecraft-data')
 
 const bot = mineflayer.createBot({
     host: '109.236.91.2',
