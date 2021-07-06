@@ -4,9 +4,9 @@ const { pathfinder, Movements, goals} = require('mineflayer-pathfinder')
 const armorManager = require('mineflayer-armor-manager')
 
 const bot = mineflayer.createBot({
-    host: 'MiningSimulatorMC.aternos.me',
+    host: 'lul.halwa.ml:43001',
     port:  26656,
-    username: 'ServerMustLIVE',
+    username: '',
     version: false,
 //    password: process.argv[5],
 })
