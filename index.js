@@ -4,9 +4,9 @@ const { pathfinder, Movements, goals} = require('mineflayer-pathfinder')
 const armorManager = require('mineflayer-armor-manager')
 
 const bot = mineflayer.createBot({
-    host: 'lul.halwa.ml',
-    port:  43001,
-    username: 'Bot',
+    host: '51.68.178.196',
+    port:  25576,
+    username: 'PVPBot',
     version: false,
 //    password: process.argv[5],
 })
